@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Simulador de Paginacion y Segmentacion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="paginacion">Paginación</string>
+    <string name="segmentacion">Segmentacion</string>
+    <string name="paginacion_segmentacion">Paginacion-Segmentacion</string>
+    <string name="title_activity_paginacion">PaginacionActivity</string>
+    <string name="title_activity_segmentacion">SegmentacionActivity</string>
+    <string name="title_activity_pag_seg">PagSegActivity</string>
+    <string name="pagina">Página</string>
+    <string name="marca">Marca</string>
+    <string name="direccion_logica">Dirección Lógica</string>
+    <string name="actualizar">Actualizado</string>
+</resources>

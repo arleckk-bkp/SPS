@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.arleckk.sps.PaginacionActivity"
+    android:id="@+id/rl_principal"
+    android:layout_above="@+id/rl_secundario">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true">
+    </include>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_refresh"
+        android:clickable="true"
+        app:layout_anchor="@+id/appbar"
+        app:fabSize="normal"
+        android:layout_alignBottom="@+id/activity_my_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-40dp"
+        app:layout_anchorGravity="bottom|right|end" />
+
+    <RelativeLayout android:id="@+id/rl_pag_marco"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/activity_my_toolbar"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pagina"
+            android:id="@+id/text_pagina"
+            android:layout_below="@+id/activity_my_toolbar"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marca"
+            android:id="@+id/text_marco"
+            android:layout_below="@+id/activity_my_toolbar"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_toRightOf="@+id/lista_paginacion_pag_marco"/>
+
+        <ListView android:id="@+id/lista_paginacion_pag_marco"
+            android:layout_below="@+id/text_pagina"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/rl_dir_log"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/rl_pag_marco"
+        android:layout_marginLeft="15dp">
+
+        <TextView android:id="@+id/text_dir_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/direccion_logica"
+            android:gravity="center_horizontal"/>
+
+        <ListView android:id="@+id/lista_dir_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/text_dir_log">
+        </ListView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
